@@ -23,6 +23,11 @@
 /classes/*.pem
 /lib/*.jar
 /component/
+!/component/moqui-adk
+!/component/moqui-mcp
+!/component/mantle-udm
+!/component/mantle-usl
+!/component/moqui-fop
 /ecomponent/
 /mantle/
 
