@@ -1,20 +1,20 @@
 [submodule "component/mantle-udm"]
 	path = component/mantle-udm
-	url = git@github.com:growerp/mantle-udm.git
+	url = https://github.com/growerp/mantle-udm.git
 	branch = growerp
 [submodule "component/mantle-usl"]
 	path = component/mantle-usl
-	url = git@github.com:growerp/mantle-usl.git
+	url = https://github.com/growerp/mantle-usl.git
 	branch = growerp
 [submodule "component/moqui-fop"]
 	path = component/moqui-fop
-	url = git@github.com:growerp/moqui-fop.git
+	url = https://github.com/growerp/moqui-fop.git
 	branch = growerp
 [submodule "component/moqui-mcp"]
 	path = component/moqui-mcp
-	url = git@github.com:growerp/moqui-mcp.git
+	url = https://github.com/growerp/moqui-mcp.git
 	branch = growerp
 [submodule "component/moqui-adk"]
 	path = component/moqui-adk
-	url = git@github.com:growerp/moqui-adk.git
+	url = https://github.com/growerp/moqui-adk.git
 	branch = growerp
