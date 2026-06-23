@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Log4j2 config for moqui-adk.
+     Silences the expected ConnectException flood that google-adk's McpToolset
+     retry loop emits when the HTTP server shuts down before the SSE client closes. -->
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %5p %-24t %-40c{1.} %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Silence retry-loop ConnectException noise from google-adk McpToolset on shutdown -->
+        <Logger name="com.google.adk.tools.mcp"                      level="FATAL" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="io.modelcontextprotocol.client"                level="FATAL" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="io.micrometer.observation.contextpropagation"  level="FATAL" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
