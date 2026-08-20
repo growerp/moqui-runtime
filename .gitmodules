@@ -10,3 +10,7 @@
 	path = component/moqui-fop
 	url = git@github.com:growerp/moqui-fop.git
 	branch = growerp
+[submodule "component/moqui-metrics"]
+	path = component/moqui-metrics
+	url = git@github.com:growerp/moqui-metrics.git
+	branch = growerp
